@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             bt_msg = new Button();
+            tb_nome = new TextBox();
             SuspendLayout();
             // 
             // bt_msg
@@ -40,19 +41,29 @@
             bt_msg.Text = "Mensagem";
             bt_msg.UseVisualStyleBackColor = true;
             // 
+            // tb_nome
+            // 
+            tb_nome.Location = new Point(297, 175);
+            tb_nome.Name = "tb_nome";
+            tb_nome.Size = new Size(176, 23);
+            tb_nome.TabIndex = 1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(tb_nome);
             Controls.Add(bt_msg);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button bt_msg;
+        private TextBox tb_nome;
     }
 }
