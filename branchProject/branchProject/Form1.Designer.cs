@@ -33,6 +33,7 @@
             lb_text = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
+            textBox3 = new TextBox();
             SuspendLayout();
             // 
             // bt_msg
@@ -75,11 +76,19 @@
             textBox2.Size = new Size(176, 23);
             textBox2.TabIndex = 4;
             // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(312, 214);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(176, 23);
+            textBox3.TabIndex = 5;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(lb_text);
@@ -98,5 +107,6 @@
         private Label lb_text;
         private TextBox textBox1;
         private TextBox textBox2;
+        private TextBox textBox3;
     }
 }
