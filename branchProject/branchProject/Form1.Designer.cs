@@ -31,6 +31,7 @@
             bt_msg = new Button();
             tb_nome = new TextBox();
             lb_text = new Label();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // bt_msg
@@ -44,7 +45,7 @@
             // 
             // tb_nome
             // 
-            tb_nome.Location = new Point(297, 175);
+            tb_nome.Location = new Point(210, 175);
             tb_nome.Name = "tb_nome";
             tb_nome.Size = new Size(176, 23);
             tb_nome.TabIndex = 1;
@@ -52,17 +53,26 @@
             // lb_text
             // 
             lb_text.AutoSize = true;
-            lb_text.Location = new Point(340, 157);
+            lb_text.Location = new Point(210, 157);
             lb_text.Name = "lb_text";
             lb_text.Size = new Size(103, 15);
             lb_text.TabIndex = 2;
             lb_text.Text = "Digite o seu nome";
+            lb_text.Click += lb_text_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(392, 175);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(176, 23);
+            textBox1.TabIndex = 3;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
             Controls.Add(lb_text);
             Controls.Add(tb_nome);
             Controls.Add(bt_msg);
@@ -77,5 +87,6 @@
         private Button bt_msg;
         private TextBox tb_nome;
         private Label lb_text;
+        private TextBox textBox1;
     }
 }
