@@ -6,5 +6,10 @@ namespace branchProject
         {
             InitializeComponent();
         }
+
+        private void lb_text_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
