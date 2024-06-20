@@ -32,11 +32,12 @@
             tb_nome = new TextBox();
             lb_text = new Label();
             textBox1 = new TextBox();
+            textBox2 = new TextBox();
             SuspendLayout();
             // 
             // bt_msg
             // 
-            bt_msg.Location = new Point(350, 204);
+            bt_msg.Location = new Point(104, 204);
             bt_msg.Name = "bt_msg";
             bt_msg.Size = new Size(75, 23);
             bt_msg.TabIndex = 0;
@@ -45,7 +46,7 @@
             // 
             // tb_nome
             // 
-            tb_nome.Location = new Point(210, 175);
+            tb_nome.Location = new Point(104, 175);
             tb_nome.Name = "tb_nome";
             tb_nome.Size = new Size(176, 23);
             tb_nome.TabIndex = 1;
@@ -53,7 +54,7 @@
             // lb_text
             // 
             lb_text.AutoSize = true;
-            lb_text.Location = new Point(210, 157);
+            lb_text.Location = new Point(104, 157);
             lb_text.Name = "lb_text";
             lb_text.Size = new Size(103, 15);
             lb_text.TabIndex = 2;
@@ -62,16 +63,24 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(392, 175);
+            textBox1.Location = new Point(286, 175);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(176, 23);
             textBox1.TabIndex = 3;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(468, 175);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(176, 23);
+            textBox2.TabIndex = 4;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(lb_text);
             Controls.Add(tb_nome);
@@ -88,5 +97,6 @@
         private TextBox tb_nome;
         private Label lb_text;
         private TextBox textBox1;
+        private TextBox textBox2;
     }
 }
