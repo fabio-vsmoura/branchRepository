@@ -30,6 +30,7 @@
         {
             bt_msg = new Button();
             tb_nome = new TextBox();
+            lb_text = new Label();
             SuspendLayout();
             // 
             // bt_msg
@@ -48,11 +49,21 @@
             tb_nome.Size = new Size(176, 23);
             tb_nome.TabIndex = 1;
             // 
+            // lb_text
+            // 
+            lb_text.AutoSize = true;
+            lb_text.Location = new Point(340, 157);
+            lb_text.Name = "lb_text";
+            lb_text.Size = new Size(103, 15);
+            lb_text.TabIndex = 2;
+            lb_text.Text = "Digite o seu nome";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lb_text);
             Controls.Add(tb_nome);
             Controls.Add(bt_msg);
             Name = "Form1";
@@ -65,5 +76,6 @@
 
         private Button bt_msg;
         private TextBox tb_nome;
+        private Label lb_text;
     }
 }
